@@ -1,0 +1,56 @@
+Nmap scan report for 10.61.114.61
+Host is up (0.055s latency).
+All 1000 scanned ports on 10.61.114.61 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: r:d:y:x:x:x (Unknown)
+
+Nmap scan report for 10.61.114.78
+Host is up (0.015s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+53/tcp open  domain  dnsmasq 2.51
+MAC Address: x:x:x:x:x:x (Unknown)
+
+Nmap scan report for 10.61.114.119
+Host is up (0.31s latency).
+All 1000 scanned ports on 10.61.114.119 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: x:x:x:x:x:x (Unknown)
+
+Nmap scan report for 10.61.114.182
+Host is up (0.027s latency).
+All 1000 scanned ports on 10.61.114.182 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: x:x:x:x:x:x (Unknown)
+
+Nmap scan report for 10.61.114.185
+Host is up (0.11s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT     STATE SERVICE         VERSION
+7070/tcp open  ssl/realserver?
+MAC Address: x:x:x:x:x:x (Unknown)
+
+Nmap scan report for 10.61.114.198
+Host is up (0.017s latency).
+All 1000 scanned ports on 10.61.114.198 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: x:x:x:x:x:x (Unknown)
+
+Nmap scan report for 10.61.114.147
+Host is up (0.0000020s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+53/tcp open  domain  dnsmasq 2.90
+
+#Potential Risk:
+
+Port 53 -- port name tcp  -- service domain 
+  Risk: * DNS cache poisoning
+        * Zone Transfer leaks
+        * Information Disclosure
+        
+port 7070 -- portname tcp -- service ssl
+  Risk: * Backdoor or malware Services
+        * proxy Abuse
+
+
